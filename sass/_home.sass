@@ -1,0 +1,226 @@
+section 
+    &:nth-child(even)
+        padding: 80px 0
+    +small-screen 
+        &:nth-child(even)
+            padding: 40px 0
+    
+.main-page
+    
+    .page-title 
+        h1 
+            letter-spacing: 1rem
+        h3 
+            font-size: 20px
+            width: 540px
+            margin: 0 auto
+            padding-top: 40px
+            +medium-screen 
+                width: auto
+h2.sub-title
+    position: relative
+    width: max-content
+    margin: 0 auto
+    &::after
+        position: absolute
+        content: ''
+        background-color: $light-pink
+        display: inline-block
+        width: 100% 
+        height: 3px
+        bottom: -45px 
+        left: 0
+.education 
+    padding-bottom: 100px
+    +medium-screen 
+        padding-bottom: 0
+.about, .education
+    // width: 28rem
+    margin: 0 auto
+    
+    .profile
+        margin: 100px 0 50px
+        gap: 60px
+        +medium-screen 
+            flex-direction: column
+        // text-align: center
+        // .profile-photo 
+        //     width: 200px
+        //     margin: 0 auto
+        //     text-align: center
+        //     border-right: groove
+        //     border-radius: 50%
+        //     border-left: groove
+        .description
+            width: calc( 100% - 400px )
+            +medium-screen 
+                width: auto
+           
+        .flip-card
+            perspective: 1000px
+            background-color: transparent 
+            width: 400px 
+            margin: 0 auto
+            +medium-screen 
+                margin-bottom: 200px
+            +small-screen 
+                width: 100%
+            .inner 
+                position: relative
+                width: 100% 
+                height: 100% 
+                transition: transform 1.5s
+                transform-style: preserve-3d
+                transform: rotate(-4deg)
+                +medium-screen 
+                    margin-bottom: 100px
+                .front, .back 
+                    position: absolute
+                    width: 100%
+                    height: 288px
+                    -webkit-backface-visibility: hidden
+                    backface-visibility: hidden
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    flex-direction: column
+                    // p 
+                        +lato-bold
+                .front 
+                    background-color: transparent
+                    background-size: cover
+                    background-repeat: no-repeat
+                    background-position: center 
+                    height: 288px
+                .back
+                    background-color: $light-pink
+                    color: $light-green
+                    transform: rotateY(180deg)
+                    padding: 0 20px
+                    width: 366px
+                    text-align: center
+                    +medium-screen 
+                        padding: 0 0
+                        width: auto
+                    p 
+                        margin-bottom: 0
+                        span 
+                            +lato-bold
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 11px
+                    left: -9px
+                    width: 100%
+                    height: 286px
+                    background-image: linear-gradient(54deg, $light-green 0%, $light-pink 43%, #c00 100%)
+            &:hover
+                .inner 
+                    transform: rotateY(180deg)
+
+.skills
+    padding-top: 20px
+    .skill-list 
+        display: flex 
+        align-items: center
+        justify-content: center
+        margin-top: 100px
+        column-gap: 80px
+        flex-wrap: wrap
+        .hexagon-red 
+            background-color: #c00
+        .hexagon-blue
+            background-color: #2296F3
+        .hexagon-yellow
+            background-color: #EC9A00
+        .hexagon-purple
+            background-color: #470137
+        .hexagon-green 
+            background-color: #1DDDFD
+        .hexagon 
+            width: 185px 
+            height: 200px
+            padding: 10px
+            clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%)
+            .inner-hexagon
+                width: 100%
+                height: 100%
+                clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%)
+                background: $light-pink
+                display: flex
+                align-items: center
+                justify-content: center
+                text-align: center
+                .inner-box-shadow   
+                    top: 0
+                    width: 80%
+                    height: 80%
+                    filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.290196))
+                    .content-hexagon
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 100%
+                        height: 100%
+                        flex-direction: column
+                        span 
+                            img 
+                                width: 50px
+                        .hexagon-text
+                            color: $dark
+                            +lato-bold
+                        
+
+            &:hover 
+                padding: 15px
+                transition: all .6s ease-out
+                clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%)
+                width: 185px 
+                height: 200px
+                .inner-hexagon
+                    .inner-box-shadow
+                        .content-hexagon
+                            .hexagon-text    
+                                color: #fff 
+.contact 
+    .mail-box 
+        border: 3px solid $light-green
+        border-radius: 6px
+        margin-top: 100px
+        width: 550px
+        margin-left: auto
+        margin-right: auto
+        padding: 40px
+        display: grid
+        +medium-screen 
+            width: auto
+        p 
+            font-size: 1.5rem 
+            +lato-bold
+
+            +medium-screen 
+                text-align: center
+        .say-btn 
+            background-color: $light-green 
+            color: $dark
+            font-size: 20px
+            padding: 5px 15px
+            border-radius: 6px
+            display: inline-block 
+            margin: 20px auto 40px auto
+        .detail-contact 
+            display: flex
+            justify-content: space-between
+            font-size: 1rem
+            +small-screen 
+                flex-direction: column
+            > div 
+                padding-bottom: 20px
+.resume-text 
+    text-align: center
+    span
+        a
+            +lato-bold
+            font-size: 20px 
+            color: $light-green
+            text-decoration: underline

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title> Mya Zar Cho | Portfilio</title>
+
+        <link rel="icon" href="images/my-logo.png" type="image/x-icon" />  
+
+        <!-- ? CSS -->
+        <link rel="stylesheet" href="./css/uikit.min.css">  
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <!-- ? JS -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <script src="js/jquery-particles.js"></script>
+        <script src="js/tsparticles.bundle.min.js"></script>
+        <script src="js/common.js"></script>
+</head>
+    <body class="dark">
+
+        <header>
+            <nav id="scroll-nav" class="uk-navbar-container" uk-navbar uk-sticky="end: !.uk-height-large; offset: 0">
+                <div class="uk-navbar-center">
+            
+                    <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+                        <!-- <li class="uk-active"><a href="#">Home</a></li> -->
+                        <li class="anchor">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="anchor">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="anchor">
+                            <a href="#education">Education</a>
+                        </li>
+                        
+                        <!-- <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li><a href="#">Item</a></li>
+                                </ul>
+                            </div>
+                        </li> -->
+                        <li class="anchor">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="anchor">
+                            <input type="checkbox" class="toggle" id="checkbox"> 
+                        </li>
+                    </ul>
+            
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-page uk-position-relative">
+            
+            <!-- <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label> -->
+
+            <div class="uk-container main-container">
+                <div class="page-title uk-text-center">
+                    <h1 class="">It's MYA ZAR CHO</h1>
+
+                    <h3>A creative frontend web developer from Myanmar, who focuses on interactive design,
+                        clean interfaces and code beautifully simple things and love what I do. 
+                        Now still working at Clickr Media.</h3>
+                </div>
+            </div>
+
+            <div id="sub-particles-1" class="sub-particles"></div>
+            <div id="sub-particles-2" class="sub-particles"></div>
+
+        </section>
+
+        <!-- *********************    About     ********************* -->
+        <section class="about" id="about">
+            <div class="uk-container main-container">
+                <h2 class="sub-title uk-text-center">About</h2>
+
+                <div class="profile uk-flex">
+                    <div class="flip-card">
+                        <div class="inner">
+                          <div class="front" style="background-image: url('images/my-profile.jpg');">
+                            <!-- <img src="images/my-profile.jpg" width='300' alt="Mya Zar Cho" /> -->
+                          </div>
+                          <div class="back">
+                            <p>Date of Birth: <span>4 July 1998</span></p>
+                           
+                            <p>Expert In: <span>Frontend Web development</span></p>
+                            <p>Yes, I do love web development.</p>
+                            <p class="resume-text">Here is <span><a href="" target="_blank">Resume</a></span> </p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Since beginning my journey as a frontend web developer  nearly 3 years ago, 
+                            I've done various websites that all of these  come from Singapore. Before I graduated , 
+                            I worked as an intership almost 3 months at MMIT. 
+                            And I started as full-time worker at CDG(Thailand based Company).
+                            almost 1 year. After that I moved to Clickr Media (Singapore based Company) from October 2020 to present.
+                            I acquired projects and time management skills, as well as the 
+                            ability to communicate with team members and clients while effectively 
+                            deadlines.
+    
+                        </p>
+                        <p>   
+                            Most of the projects are developed by using HTML, CSS, SASS, SCSS, Javascript, React JS,  
+                            jQuery, UIKit, Bootstrap, 
+                            Wordpress ( Elementor and Visual Composer ), Responsive Layouts and Email templates.
+                            For other, I'm used PHP , Laravel.
+                            As for Web Design, used Adobe XD, Photoshop, Illustrator. 
+                           
+                        </p>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- *********************    Skills     ********************* -->
+
+        <section id="skills" class="skills uk-position-relative">
+            <div id="sub-particles-3" class="sub-particles"></div>
+            <div id="sub-particles-4" class="sub-particles"></div>
+            <div class="uk-container main-container">
+                <h2 class="sub-title uk-text-center">Skills</h2>
+                <div class="skill-list">
+                    <div class="hexagon hexagon-red">
+                        <div class="inner-hexagon">
+                          <div class="inner-box-shadow">
+                            <div class="content-hexagon">
+                                <span><img src="images/html.png" uk-img></span>
+                                <p class="hexagon-text">HTML</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="hexagon hexagon-blue">
+                        <div class="inner-hexagon">
+                          <div class="inner-box-shadow">
+                            <div class="content-hexagon">
+                                <span><img src="images/css.png" uk-img></span>
+                                <p class="hexagon-text">CSS</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="hexagon hexagon-yellow">
+                        <div class="inner-hexagon">
+                          <div class="inner-box-shadow">
+                            <div class="content-hexagon">
+                                <span><img src="images/js.png" uk-img></span>
+                                <p class="hexagon-text">Javascript</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- <div class="hexagon hexagon-purple">
+                        <div class="inner-hexagon">
+                          <div class="inner-box-shadow">
+                            <div class="content-hexagon">
+                              <p class="hexagon-text">Javascript</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div> -->
+                    <div class="hexagon hexagon-green">
+                        <div class="inner-hexagon">
+                          <div class="inner-box-shadow">
+                            <div class="content-hexagon">
+                                <span><img src="images/react.jpeg" uk-img></span>
+                              <p class="hexagon-text">React JS</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="hexagon hexagon-purple">
+                        <div class="inner-hexagon">
+                          <div class="inner-box-shadow">
+                            <div class="content-hexagon">
+                                <span>
+                                    <img src="images/photoshop.png" uk-img>
+                                    <img src="images/xd.png" uk-img>
+                                </span>
+                              <p class="hexagon-text">Photoshop & XD</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- End Skills -->
+
+        <!-- *********************    Education     ********************* -->
+
+        <section class="education uk-position-relative" id="education">
+            <div id="sub-particles-5" class="sub-particles"></div>
+
+            <div class="uk-container main-container">
+                <h2 class="sub-title uk-text-center">Education</h2>
+                <div class="profile uk-flex">
+                   
+                    <div class="description">
+                        <p>
+                            I've graduated with Bachelor of Computer Science (B.C.Sc) 
+                            from University of Computer Studies (Thaton) since February 2020.   
+                            My degree gave me a lot of knowledge and skills that need 
+                            for a successful start on the IT job market. 
+                            For other quanlification, I got Certificate in PHP Web Developer Bootcamp(MMIT).
+                        </p>
+                      
+                    </div>
+                    <div class="flip-card">
+                        <div class="inner">
+                          <div class="front" style="background-image: url('images/uni.jpeg');">
+                            <!-- <img src="images/my-profile.jpg" width='300' alt="Mya Zar Cho" /> -->
+                          </div>
+                          <div class="back">
+                            <p>Bachelor of Computer Science(B.C.Sc)</p>
+                            <p>University of Computer Studies</p>
+                            <span>Dec 2014 to Oct-2019</span>
+                            
+                            
+                            
+                            
+                          </div>
+                        </div>
+                    </div>
+                  
+                </div>
+
+            </div>
+        </section>
+
+        <!-- End Education -->
+
+
+        <!-- *********************    Contact     ********************* -->
+        <section class="contact uk-position-relative" id="contact">
+            <div id="sub-particles-6" class="sub-particles"></div>
+            <div class="uk-container main-container">
+                <h2 class="sub-title uk-text-center">Get in Touch</h2>
+                <div class="mail-box">
+                    <p>Want to work together or have any question?</p>
+                    <a href="mailto:myazarcho@gamil.com" class="say-btn">Say Hello 👋</a>
+
+                    <div class="detail-contact">
+                        <div>
+                            <span uk-icon="receiver"></span> +95 9770565059
+
+                        </div>
+                      
+                        <div>
+                            <span uk-icon="home"></span> Hlaing Township, Yangon, Myanmar
+
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <!--  -->
+
+        <footer>
+            <div class=" uk-container main-container">
+                <div class="uk-flex footer">
+                    <p>
+                        Copyright &#169; 2021 MZC, All Rights Reserved.
+                    </p>
+                    <ul class="uk-flex">
+                        <li>
+                            <span class="social-hex"></span>
+                            <a href="#" class="uk-icon-link" uk-icon="facebook"></a>
+                        </li>
+                        <li>
+                            <span class="social-hex"></span>
+                            <a href="https://github.com/myazarcho" class="uk-icon-link" uk-icon="github"></a>
+                        </li>
+                        <li>
+                            <span class="social-hex"></span>
+                            <a href="#" class="uk-icon-link" uk-icon="instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

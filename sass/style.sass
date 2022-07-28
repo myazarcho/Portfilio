@@ -1,0 +1,218 @@
+@import fonts 
+
+=lato-bold
+    font-family: 'Lato-Bold'
+
+=lato-light
+    font-family: 'Lato-Light'
+
+=lato-regular
+    font-family: 'Lato-Regular'
+
+$dark: #222733 
+$grey:  #525e65
+$light-green: #73CCA8
+$light-pink: #DBE8D4
+
+// responsive
+=respond($breakpoint)
+	@media screen and (max-width: $breakpoint)
+		@content
+
+=medium-screen 
+    @media screen and (max-width: 1025px)  
+        @content
+	
+=small-screen
+	@media screen and (max-width: 639px)
+		@content
+body 
+    color: $dark
+    font-size: 18px
+    line-height: 1.5
+    letter-spacing: 1px
+    +lato-regular
+body.dark 
+    background-color: #525e65
+    color: #DBE8D4
+    h1,h2 
+        color: #DBE8D4
+    h3
+        color: $light-pink
+h1, h2 
+    +lato-bold
+    color: $dark
+h1 
+    font-size: 65px
+    text-shadow: 2px 2px #73cca8
+
+    +small-screen 
+        font-size: 45px
+h2 
+    font-size: 45px
+    text-shadow: 2px 2px #73cca8
+h3 
+    +lato-bold
+    color: $dark
+    
+a
+    &:hover
+        text-decoration: none   
+    
+p 
+    +lato-light
+    letter-spacing: 1px
+input[type="checkbox"]
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    -webkit-tap-highlight-color: transparent
+    cursor: pointer
+    &:focus
+        outline: 0
+.uk-container.main-container
+    width: 940px
+    max-width: 100%
+    margin: 0 auto
+    +medium-screen 
+        width: auto
+.checkbox 
+    opacity: 0
+    position: absolute
+    &:checked
+        .ball
+            transition: all .2s cubic-bezier(.5,.1,.75,1.35)
+.fa-moon 
+    color: #f1c40f
+
+.fa-sun 
+    color: #f39c12
+
+.checkbox-label 
+    background-color: #111
+    width: 50px
+    height: 26px
+    border-radius: 50px
+    position: relative
+    padding: 5px
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .ball 
+        background-color: #fff
+        width: 22px
+        height: 22px
+        position: absolute
+        left: 2px
+        top: 2px
+        border-radius: 50%
+        transition: transform 0.2s linear
+
+.toggle
+    position: relative
+    width: 65px
+    height: 25px
+    border: 2px solid $light-pink
+    border-radius: 20px
+    transition: all .3s ease
+    margin-top: 8px
+    &:after 
+        content: ''
+        position: absolute
+        border-radius: 50%
+        width: 21px
+        height: 21px
+        background: $light-green
+        box-shadow: 0 1px 2px rgba(44,44,44,.2)
+        transition: all .2s cubic-bezier(.5,.1,.75,1.35)
+        
+    &:checked
+        border-color: $light-green
+        &:after
+            right: 20px
+            transform: translatex(20px)
+.sub-particles
+    canvas 
+        width: 300px !important
+        height: 400px !important
+        position: absolute
+        // z-index: -1
+#sub-particles-1 
+    canvas
+        bottom: 0
+        left: 0
+#sub-particles-2 
+    canvas
+        // bottom: 0
+        right: 0
+#sub-particles-3 ,#sub-particles-5
+    canvas
+        top: 0
+        left: 0
+#sub-particles-4,#sub-particles-6
+    canvas
+        bottom: 0
+        right: 0
+body.dark 
+    footer .footer p
+        color: #fff
+
+
+footer 
+    background-color: $dark
+    +small-screen 
+        padding: 20px 0 40px
+    .footer 
+        align-items: center
+        justify-content: space-between
+        +medium-screen
+            flex-direction: column-reverse 
+        p 
+            margin-bottom: 0
+            color: #fff
+            +small-screen 
+                font-size: 14px
+        ul 
+            list-style: none
+            gap: 10px
+            li 
+                position: relative
+                display: inlibe-block
+                a 
+                    color: $light-pink
+                    display: block
+                    font-size: 14px
+                    height: 50px
+                    left: 0
+                    line-height: 50px
+                    position: absolute
+                    text-align: center
+                    top: -3px
+                    width: 43px
+        .social-hex
+            width: 43px;
+            height: 24.83px
+            background-color: $light-green
+            margin: 12.41px 0
+            transition: all 0.3s ease 0s
+            display: block
+            position: relative
+            &::before, &::after
+                content: ""
+                position: absolute
+                width: 0
+                border-left: 21.5px solid transparent
+                border-right: 21.5px solid transparent
+                transition: all 0.3s ease 0s
+            &::before
+                bottom: 100%
+                border-bottom: 12.41px solid $light-green
+            &::after
+                top: 100%
+                width: 0
+                border-top: 12.41px solid $light-green
+        
+            
+@import _home
+@import _header

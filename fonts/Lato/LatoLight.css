@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LatoLight';
+    src: url('fonts/LatoLight.eot');
+    src: url('fonts/LatoLight.eot') format('embedded-opentype'),
+         url('fonts/LatoLight.woff2') format('woff2'),
+         url('fonts/LatoLight.woff') format('woff'),
+         url('fonts/LatoLight.ttf') format('truetype'),
+         url('fonts/LatoLight.svg#LatoLight') format('svg');
+}
