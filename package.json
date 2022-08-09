@@ -1,22 +1,19 @@
 {
-  "name": "dbs-gsmc-zfw-tracker",
+  "name": "portfilio",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulp.js",
+  "description": "\"My portfilio\"",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ko Zin Thet",
-  "license": "ISC",
-  "dependencies": {
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-watch": "^5.0.1",
-    "node": "^11.15.0",
-    "node-sass": "^4.12.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myazarcho/Portfilio.git"
   },
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-install": "^1.1.0",
-    "gulp-sass": "3.0.0"
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myazarcho/Portfilio/issues"
+  },
+  "homepage": "https://github.com/myazarcho/Portfilio#readme"
 }

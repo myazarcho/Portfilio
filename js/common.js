@@ -36,7 +36,7 @@ $(document).ready(function(){
             const hash = this.hash;
             $("html, body").animate(
               {
-                scrollTop: $(hash).offset().top - 80 // - 100 if you wish
+                scrollTop: $(hash).offset().top - 0 // - 100 if you wish
               },
               800
             );

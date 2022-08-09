@@ -32,6 +32,7 @@ h2.sub-title
         left: 0
 .education 
     padding-bottom: 100px
+    padding-top: 80px
     +medium-screen 
         padding-bottom: 0
 .about, .education
@@ -53,6 +54,7 @@ h2.sub-title
         //     border-left: groove
         .description
             width: calc( 100% - 400px )
+            text-align: justify
             +medium-screen 
                 width: auto
            
@@ -119,7 +121,8 @@ h2.sub-title
                     transform: rotateY(180deg)
 
 .skills
-    padding-top: 20px
+    padding-top: 40px!important
+    padding-bottom: 0!important
     .skill-list 
         display: flex 
         align-items: center
@@ -172,11 +175,11 @@ h2.sub-title
                         
 
             &:hover 
-                padding: 15px
+                padding: 5px
                 transition: all .6s ease-out
                 clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%)
-                width: 185px 
-                height: 200px
+                // width: 185px 
+                // height: 200px
                 .inner-hexagon
                     .inner-box-shadow
                         .content-hexagon
